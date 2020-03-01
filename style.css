@@ -1,0 +1,101 @@
+* {
+  /* border: 1px solid #000; */
+}
+
+body,
+html {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: '微軟正黑體';
+}
+
+.titleBox {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.todoList {
+  /* border: 1px solid #ccc; */
+  width: 300px;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+.todoItem {
+  /* border: 1px solid #ccc; */
+  list-style: none;
+  margin: 0px;
+  text-align: left;
+  padding: 5px 10px 5px 10px;
+  font-size: 18px;
+}
+
+.todoItem.is-checked .itemName {
+  text-decoration: line-through;
+}
+
+.todoItem.is-checked .itemName::before {
+  content: "\f14a";
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.itemName {
+  cursor: pointer;
+  display: inline-block;
+  /*   width: calc(100% - 2em); */
+}
+
+.itemName::before {
+  content: "\f0c8";
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+.fa.fa-times {
+  float: right;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.fa.fa-times:hover {
+  color: #555;
+  transition: 0.2s;
+}
+
+.inputBox {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.addInput {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px 10px;
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+.learnWhat {
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+}
