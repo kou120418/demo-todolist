@@ -4,13 +4,13 @@ var vm = new Vue({
     input: '',
     default_data: [{
       name: '透視研究',
-      check: ''
+      check: 'not-checked'
     }, {
       name: '構成研究',
-      check: ''
+      check: 'not-checked'
     }, {
       name: '色彩研究',
-      check: ''
+      check: 'not-checked'
     }]
   },
   methods: {
