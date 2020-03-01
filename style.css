@@ -16,6 +16,7 @@ body {
 .titleBox {
   width: 300px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 10px 0;
   font-size: 30px;
   text-align: center;
@@ -34,45 +35,61 @@ body {
   list-style: none;
   margin: 0px;
   text-align: left;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
   font-size: 18px;
+  transition: 0.2s;
+}
+
+.todoItem:hover {
+  background-color: #eee;
 }
 
 .todoItem.is-checked .itemName {
   text-decoration: line-through;
+  color: #D2EBDC;
+}
+
+.todoItem.is-checked .itemName:hover {
+  transition: 0.2s;
+  color: #78C396;
 }
 
 .todoItem.is-checked .itemName::before {
-  content: "\f14a";
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1.2em;
+  color: #08923F;
 }
 
 .itemName {
   cursor: pointer;
   display: inline-block;
-  /*   width: calc(100% - 2em); */
+  width: calc(100% - 2em);
+  transition: 0.2s;
 }
 
 .itemName::before {
-  content: "\f0c8";
   display: inline-block;
+  content: '\f303';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1.2em;
   margin-right: 0.5em;
+  color: #D34E24;
 }
 
-.fa.fa-times {
+.fas.fa-times {
   float: right;
   color: #ccc;
   font-size: 18px;
   font-weight: 900;
-  margin-top: 4px;
+  margin-top: 7px;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.fa.fa-times:hover {
+.fas.fa-times:hover {
   color: #555;
   transition: 0.2s;
 }
@@ -89,6 +106,12 @@ body {
   padding: 3px 10px;
   margin: 10px 0 10px 0;
   font-size: 14px;
+  transition: 0.2s;
+}
+
+.addInput:hover {
+  background-color: #eee;
+  transition: 0.2s;
 }
 
 .learnWhat {

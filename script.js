@@ -30,13 +30,13 @@ var vm = new Vue({
     },
     check: function (index) {
       if (this.default_data[index].check != 'not-checked') {
-        this.default_data[index].check = 'not-checked'
+        this.default_data[index].check = 'not-checked';
       } else {
-        this.default_data[index].check = 'is-checked'
+        this.default_data[index].check = 'is-checked';
       }
     },
     del: function (index) {
-      this.default_data.splice(index, 1)
+      this.default_data.splice(index, 1);
     }
   }
 });

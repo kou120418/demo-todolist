@@ -8,17 +8,18 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 
 <body>
-  <div id="app" class="listBox">
+  <div id="app">
     <div class="titleBox">
       <span class="titleText">每日學習事項</span>
     </div>
     <ul class="todoList">
       <li class="list-group-item todoItem" v-for="(item,index) in default_data" v-bind:class="item.check">
         <span class="itemName" v-on:click="check(index)">{{item.name}}</span>
-        <i class="fa fa-times" @click="del(index)"></i>
+        <i class="fas fa-times" @click="del(index)"></i>
       </li>
     </ul>
     <div class="inputBox">
@@ -27,9 +28,10 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
